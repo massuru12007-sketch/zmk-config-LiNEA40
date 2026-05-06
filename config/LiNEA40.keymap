@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,
+            //スクロール方向を逆転,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -104,6 +104,11 @@
         GameLayer {
             bindings = <&tog 7>;
             key-positions = <8 9>;
+        };
+
+        Delete {
+            bindings = <&kp DEL>;
+            key-positions = <40 29>;
         };
     };
 
